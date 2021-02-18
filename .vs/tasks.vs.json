@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-Database1",
+      "appliesTo": "Database1.mdf",
+      "type": "launch"
+    },
+    {
+      "taskName": "task-Database1",
+      "appliesTo": "Pr-Outomation/Database1.mdf",
+      "type": "launch"
+    }
+  ]
+}

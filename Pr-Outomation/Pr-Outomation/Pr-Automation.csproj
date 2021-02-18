@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BEE8103-794D-49C6-812C-9CD4DB73E938}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pr_Outomation</RootNamespace>
+    <AssemblyName>Pr-Outomation</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>tr</TargetCulture>
+    <ProductName>Pr-Automation</ProductName>
+    <PublisherName>MSoftware©</PublisherName>
+    <SuiteName>Pr-Automation</SuiteName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F58C99E942D7448BD3BF64BD822DA3E647426DF0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Pr-Automation_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Basyhakil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basyhakil.Designer.cs">
+      <DependentUpon>Basyhakil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bilg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilg.Designer.cs">
+      <DependentUpon>Bilg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bilgi_islem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilgi_islem.Designer.cs">
+      <DependentUpon>Bilgi_islem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Birimler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Birimler.Designer.cs">
+      <DependentUpon>Birimler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cevre_k.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cevre_k.Designer.cs">
+      <DependentUpon>Cevre_k.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cihazlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cihazlar.Designer.cs">
+      <DependentUpon>Cihazlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connect.cs" />
+    <Compile Include="Deshim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deshim.Designer.cs">
+      <DependentUpon>Deshim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DigerCihazlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DigerCihazlar.Designer.cs">
+      <DependentUpon>DigerCihazlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feişm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feişm.Designer.cs">
+      <DependentUpon>Feişm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkında.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hakkında.Designer.cs">
+      <DependentUpon>Hakkında.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ihlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ihlist.Designer.cs">
+      <DependentUpon>Ihlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imşemü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imşemü.Designer.cs">
+      <DependentUpon>Imşemü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insankay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insankay.Designer.cs">
+      <DependentUpon>Insankay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Itfam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Itfam.Designer.cs">
+      <DependentUpon>Itfam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Külsosim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Külsosim.Designer.cs">
+      <DependentUpon>Külsosim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Malhizmü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Malhizmü.Designer.cs">
+      <DependentUpon>Malhizmü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Servis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servis.Designer.cs">
+      <DependentUpon>Servis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash_S.Designer.cs">
+      <DependentUpon>Splash_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenu.Designer.cs">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hukuk_isleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hukuk_isleri.Designer.cs">
+      <DependentUpon>Hukuk_isleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Park_b.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Park_b.Designer.cs">
+      <DependentUpon>Park_b.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok.Designer.cs">
+      <DependentUpon>Stok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suvkam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suvkam.Designer.cs">
+      <DependentUpon>Suvkam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TavBelDataSet1.cs">
+      <DependentUpon>TavBelDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TavBelDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TavBelDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Temişm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temişm.Designer.cs">
+      <DependentUpon>Temişm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yapkmü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yapkmü.Designer.cs">
+      <DependentUpon>Yapkmü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yazıcılar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yazıcılar.Designer.cs">
+      <DependentUpon>Yazıcılar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yazı_isleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yazı_isleri.Designer.cs">
+      <DependentUpon>Yazı_isleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zabıta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zabıta.Designer.cs">
+      <DependentUpon>Zabıta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Basyhakil.resx">
+      <DependentUpon>Basyhakil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilg.resx">
+      <DependentUpon>Bilg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilgi_islem.resx">
+      <DependentUpon>Bilgi_islem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Birimler.resx">
+      <DependentUpon>Birimler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cevre_k.resx">
+      <DependentUpon>Cevre_k.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cihazlar.resx">
+      <DependentUpon>Cihazlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deshim.resx">
+      <DependentUpon>Deshim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigerCihazlar.resx">
+      <DependentUpon>DigerCihazlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feişm.resx">
+      <DependentUpon>Feişm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hakkında.resx">
+      <DependentUpon>Hakkında.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ihlist.resx">
+      <DependentUpon>Ihlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imşemü.resx">
+      <DependentUpon>Imşemü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insankay.resx">
+      <DependentUpon>Insankay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Itfam.resx">
+      <DependentUpon>Itfam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Külsosim.resx">
+      <DependentUpon>Külsosim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Malhizmü.resx">
+      <DependentUpon>Malhizmü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servis.resx">
+      <DependentUpon>Servis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash_S.resx">
+      <DependentUpon>Splash_S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenu.resx">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hukuk_isleri.resx">
+      <DependentUpon>Hukuk_isleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Park_b.resx">
+      <DependentUpon>Park_b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Stok.resx">
+      <DependentUpon>Stok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suvkam.resx">
+      <DependentUpon>Suvkam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temişm.resx">
+      <DependentUpon>Temişm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yapkmü.resx">
+      <DependentUpon>Yapkmü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yazıcılar.resx">
+      <DependentUpon>Yazıcılar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yazı_isleri.resx">
+      <DependentUpon>Yazı_isleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zabıta.resx">
+      <DependentUpon>Zabıta.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Pr-Automation_TemporaryKey.pfx" />
+    <None Include="Pr-Outomation_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TavBelDataSet1.xsc">
+      <DependentUpon>TavBelDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TavBelDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TavBelDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TavBelDataSet1.xss">
+      <DependentUpon>TavBelDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Version 1.0.0 .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layer 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttons_PNG21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-smart-home-shield-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-smart-home-shield-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dog-house-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-unit-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-nas-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\689495.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %281%29 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.11.1">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sell-stock-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-printer-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-unit-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-insert-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-insert-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clear-symbol-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %281%29 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %281%29 %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %281%29 %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-computer-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-label-printer-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-printer-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-administrative-tools-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-administrative-tools-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-computer-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-label-printer-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tree-structure-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-basket-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shopping-basket-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-label-printer-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-computer-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-administrative-tools-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-administrative-tools-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-printer-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo %281%29.ico" />
+    <None Include="Resources\icons8-add-list-30.png" />
+    <None Include="Resources\icons8-sell-stock-30.png" />
+    <None Include="Resources\icons8-shopping-basket-30.png" />
+    <None Include="Resources\icons8-shopping-basket-50.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

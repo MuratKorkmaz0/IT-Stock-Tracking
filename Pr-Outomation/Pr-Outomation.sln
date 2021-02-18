@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pr-Automation", "Pr-Outomation\Pr-Automation.csproj", "{4BEE8103-794D-49C6-812C-9CD4DB73E938}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Pr-Automaiton", "Pr-Automaiton\Pr-Automaiton.vdproj", "{8262A7D4-8298-427D-91DE-B530A93A71D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BEE8103-794D-49C6-812C-9CD4DB73E938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BEE8103-794D-49C6-812C-9CD4DB73E938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BEE8103-794D-49C6-812C-9CD4DB73E938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BEE8103-794D-49C6-812C-9CD4DB73E938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8262A7D4-8298-427D-91DE-B530A93A71D6}.Debug|Any CPU.ActiveCfg = Debug
+		{8262A7D4-8298-427D-91DE-B530A93A71D6}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34AB5BFC-796B-4514-A8B8-C1D42A7C9898}
+	EndGlobalSection
+EndGlobal
