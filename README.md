@@ -8,3 +8,5 @@
 * isual studio has been developed in c # using mysql database. 
 
 * P.S: A project I wrote for an institution. I didn't intentionally clean coding, so it's hard to understand by any other developer.
+
+![image-12](https://user-images.githubusercontent.com/59292099/115404784-52510400-a1f6-11eb-8d1a-d558a73ab7a5.png)
